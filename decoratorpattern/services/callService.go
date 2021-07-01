@@ -4,9 +4,7 @@ import (
 	model "goDesignPatterns/decoratorpattern/model"
 )
 
-
-
- func TestService() {
+func TestService() {
 	item1 := model.Item{
 		Name:        "a model name",
 		Description: "a model long description",

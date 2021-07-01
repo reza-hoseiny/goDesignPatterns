@@ -1,19 +1,14 @@
 package main
 
 import (
-	_ "goDesignPatterns/decoratorpattern/model"
-	_ "goDesignPatterns/decoratorpattern/decorator"
-	services "goDesignPatterns/decoratorpattern/services"
+	// _ "goDesignPatterns/decoratorpattern/model"
+	// _ "goDesignPatterns/decoratorpattern/decorator"
 	"fmt"
+	services "goDesignPatterns/decoratorpattern/services"
 )
-
-
 
 func main() {
 	fmt.Println("Hello, Gopher!")
-	
-
-	// 
-	// fmt.Printf("%v %T\n", item, item)
-	services.TestService()
+	// services.TestService()
+	services.MakePizza()
 }
