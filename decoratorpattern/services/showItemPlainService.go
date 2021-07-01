@@ -1,12 +1,13 @@
 package services
 
 import (
+	model "goDesignPatterns/decoratorpattern/model"
 	decorator "goDesignPatterns/decoratorpattern/decorator"
 	"fmt"
 )
 
-func ShowPlainItem() {
-	item := decorator.NewShowItemView("Bag Red Velvet", "Bag for women", 90.1).Show()
+func showPlainItem(input_item model.Item) {
+	item := decorator.NewShowItemViewFromPlainItem(input_item).Show()
  
 	fmt.Printf("=====Show Plain Item=====\n")
 	fmt.Printf("Item name: %s\n", item.Name)

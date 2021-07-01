@@ -18,6 +18,16 @@ func NewShowItemView(name, description string, price float64) ShowItemView {
 	}
 }
 
+func NewShowItemViewFromPlainItem(input_item model.Item) ShowItemView {
+	return ShowItemView{
+		item: model.Item{
+			Name:        input_item.Name,
+			Description: input_item.Description,
+			Price:       input_item.Price,
+		},
+	}
+}
+
 func (i ShowItemView) Show() model.Item {
 	return i.item
 }
